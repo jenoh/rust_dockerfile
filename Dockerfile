@@ -6,7 +6,6 @@ ADD src src
 COPY Cargo.toml .
 
 # Dependencies
-# RUN rm /var/lib/apt/lists/* -vf
 RUN apt-get -y update
 RUN apt-get -y install curl build-essential libpq-dev pkg-config netcat libssl-dev
 
